@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.elishevak.training.FactFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/fragmant_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/factBg"
+        android:gravity="top"
+        android:padding="20sp"
+        android:textColor="@color/factText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fragmant_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/factBg"
+        android:gravity="top"
+        android:padding="20sp"
+        android:textColor="@color/factText"
+        android:textSize="@dimen/factHeaderSize" />
+
+    <ImageView
+        android:id="@+id/fragment_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:scaleType="centerCrop"
+        android:textSize="@dimen/factContentSize" />
+
+</LinearLayout>
