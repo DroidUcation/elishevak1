@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_background">#0174a5</color>
+    <color name="question_color">#ffffff</color>
+    <color name="action_button_background">#2680b4</color>
+    <color name="action_button_text_color">#dde8f0</color>
+</resources>

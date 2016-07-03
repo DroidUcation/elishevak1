@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/photo_image_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/main_concept" />-->
+
+    <TextView
+        android:id="@+id/main_welcome_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/main_welcome_title"
+        />
+
+    <TextView
+        android:id="@+id/main_welcome_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/main_welcome_subtitle"
+        />
+
+    <Button
+        android:id="@+id/move_to_facts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startOptimize"
+        android:text="@string/main_start_optimize"
+        />
+</LinearLayout>

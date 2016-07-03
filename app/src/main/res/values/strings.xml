@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">optimizer</string>
+    <string name="main_welcome_title">Which Mobile Devices and Platforms Should You Test On?</string>
+    <string name="main_welcome_subtitle">Discover the optimal mix for maximizing your test coverage with the fewest devices possible!</string>
+    <string name="main_start_optimize">START OPTIMIZE</string>
+    <string name="preferences_title">Tell us about your app</string>
+    <string name="target_audience_question">Where is your target audience?</string>
+    <string name="target_audience_button">Select Country</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_geographies">GeographiesActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>

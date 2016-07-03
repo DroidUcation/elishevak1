@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:rowCount="3"
+    android:columnCount="2"
+    >
+
+    <TextView
+        android:id="@+id/preferences_title"
+        android:layout_weight="0"
+        android:layout_columnSpan="2"
+        android:text="@string/preferences_title"
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/goto_target_audiences"
+        android:onClick="gotoTargetAudiences"
+        android:text="Cell 0"
+        android:textSize="40dip"
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/goto_operating_systems"
+        android:onClick="gotoOperatingSystems"
+        android:text="Cell 1"
+        android:textSize="40dip"
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/goto_device_types"
+        android:onClick="gotoDeviceTypes"
+        android:text="Cell 2"
+        android:textSize="40dip"
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/goto_customized_preferences"
+        android:onClick="gotoCustomizedPreferences"
+        android:text="Cell 3"
+        android:textSize="40dip"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnSpan="2"
+        android:background="#b6ea50" />
+
+</GridLayout>
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
