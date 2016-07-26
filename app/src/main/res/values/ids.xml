@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="temp_question" type="id">10000001</item>
+    <item name="partial_results_list" type="id">10000002</item>
+</resources>

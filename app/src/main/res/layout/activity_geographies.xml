@@ -3,10 +3,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.perfecto.optimizer.preferences.targetAudience.GeographiesActivity">
+    tools:context=".activities.preferences.targetAudience.GeographiesActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/question"
+        android:layout_width="200dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/target_audience_question" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:orientation="vertical"
+        android:background="@color/countries_background"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:background="@color/action_button_background"
+            android:text="@string/done"
+            android:textColor="@color/action_button_text_color"
+            android:onClick="backToPreferences"/>
+
+        <CheckBox
+            android:id="@+id/us_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="93dp"
+            android:text="United states"
+            android:onClick="toggleGeography"
+            />
+
+        <CheckBox
+            android:id="@+id/netherlands_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/us_checkBox"
+            android:text="Netherlands"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/canada_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/netherlands_checkBox"
+            android:text="Canada"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/eu5_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/canada_checkBox"
+            android:text="Eu5"
+            android:onClick="toggleGeography"/>
+
+
+        <CheckBox
+            android:id="@+id/uk_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/done_button"
+            android:layout_below="@+id/eu5_checkBox"
+            android:text="United Kingdom"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/germany_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/uk_checkBox"
+            android:layout_below="@+id/uk_checkBox"
+            android:text="Germany"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/spain_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/germany_checkBox"
+            android:layout_below="@+id/germany_checkBox"
+            android:text="Spain"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/italy_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/germany_checkBox"
+            android:layout_below="@+id/spain_checkBox"
+            android:text="Italy"
+            android:onClick="toggleGeography"/>
+
+        <CheckBox
+            android:id="@+id/french_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/germany_checkBox"
+            android:layout_below="@+id/italy_checkBox"
+            android:onClick="toggleGeography"
+            android:text="French" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

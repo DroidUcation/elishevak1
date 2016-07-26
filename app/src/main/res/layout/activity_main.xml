@@ -3,36 +3,47 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    >
+    android:background="@color/app_background"
+    android:weightSum="1">
 
-    <!--<ImageView-->
-        <!--android:id="@+id/photo_image_view"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:scaleType="centerCrop"-->
-        <!--android:src="@drawable/main_concept" />-->
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/start_optimize"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/main_welcome_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
+        android:layout_width="257dp"
+        android:layout_height="54dp"
         android:text="@string/main_welcome_title"
-        />
+        android:textColor="@color/question_text_color"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_weight="0.47"
+        android:textSize="26dp" />
 
     <TextView
         android:id="@+id/main_welcome_subtitle"
-        android:layout_width="match_parent"
+        android:layout_width="237dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:text="@string/main_welcome_subtitle"
-        />
+        android:textColor="@color/question_text_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.23"
+        android:textAlignment="center"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/move_to_facts"
-        android:layout_width="wrap_content"
+        android:layout_width="138dp"
         android:layout_height="wrap_content"
         android:onClick="startOptimize"
         android:text="@string/main_start_optimize"
+        android:textColor="@color/select_country_button_text_color"
+        android:background="@color/select_country_button_background"
+        android:layout_gravity="center_horizontal"
         />
 </LinearLayout>

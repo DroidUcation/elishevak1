@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#82bc41</color>
+    <!--<color name="primary_text_default_material_dark">#425563</color>-->
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="app_background">#0174a5</color>
-    <color name="question_color">#ffffff</color>
-    <color name="action_button_background">#2680b4</color>
-    <color name="action_button_text_color">#dde8f0</color>
+    <color name="question_text_color">#FFFFFF</color>
+    <color name="select_country_button_background">#2680b4</color>
+    <color name="select_country_button_text_color">#dde8f0</color>
+    <color name="icon_text_color">#ffffff</color>
+    <color name="action_button_background">#425563</color>
+    <color name="action_button_text_color">#ffffff</color>
+    <color name="countries_background">#F1F6F6</color>
+    <color name="results_text_color">#425563</color>
+    <color name="selected_icon_background">#82bc41</color>
+    <color name="deselected_icon_background">@color/app_background</color>
 </resources>

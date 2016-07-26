@@ -1,55 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
-    android:rowCount="3"
-    android:columnCount="2"
-    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/preferences_title"
-        android:layout_weight="0"
-        android:layout_columnSpan="2"
-        android:text="@string/preferences_title"
-        />
 
-    <android.support.v7.widget.AppCompatImageButton
-        android:id="@+id/goto_target_audiences"
-        android:onClick="gotoTargetAudiences"
-        android:text="Cell 0"
-        android:textSize="40dip"
-        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13">
 
-    <android.support.v7.widget.AppCompatImageButton
-        android:id="@+id/goto_operating_systems"
-        android:onClick="gotoOperatingSystems"
-        android:text="Cell 1"
-        android:textSize="40dip"
-        />
+        <TextView
+            android:id="@+id/preferences_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/preferences_title"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_text_size" />
+    </RelativeLayout>
 
-    <android.support.v7.widget.AppCompatImageButton
-        android:id="@+id/goto_device_types"
-        android:onClick="gotoDeviceTypes"
-        android:text="Cell 2"
-        android:textSize="40dip"
-        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.28">
 
-    <android.support.v7.widget.AppCompatImageButton
-        android:id="@+id/goto_customized_preferences"
-        android:onClick="gotoCustomizedPreferences"
-        android:text="Cell 3"
-        android:textSize="40dip"
-        />
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/goto_target_audiences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_90x90"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_columnSpan="2"
-        android:background="#b6ea50" />
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/goto_operating_systems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/os_90x90"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
 
-</GridLayout>
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/goto_device_types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/devices_90x90"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:id="@+id/partial_results"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/temp_question"
+            android:textColor="@color/question_text_color"
+            android:textSize="@dimen/question_text_size"
+            android:text="@string/preferences_temp_question"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/partial_results_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/countries_background"
+            android:layout_above="@+id/see_full_picture" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_full_picture"
+            android:id="@+id/see_full_picture"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/action_button_background"
+            android:textColor="@color/action_button_text_color" />
+
+    </RelativeLayout>
+</LinearLayout>

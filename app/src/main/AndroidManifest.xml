@@ -2,14 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.perfecto.optimizer">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/optimizer_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,14 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity android:name="com.perfecto.optimizer.activities.MainActivity"></activity> -->
-        <activity android:name=".preferences.customizedPreferences.CustomizedPreferencesActivity" />
-        <activity android:name=".preferences.DeviceTypesActivity" />
-        <activity android:name=".preferences.OperatingSystemsActivity" />
-        <activity android:name=".preferences.targetAudience.TargetAudiencesActivity" />
-        <activity android:name=".preferences.targetAudience.GeographiesActivity" />
-        <activity android:name=".preferences.customizedPreferences.CustomersDevicesActivity" />
-        <activity android:name=".ResultsActivity"></activity>
+        <activity android:name=".activities.preferences.customizedPreferences.CustomizedPreferencesActivity" />
+        <activity android:name=".activities.preferences.DeviceTypesActivity" />
+        <activity android:name=".activities.preferences.OperatingSystemsActivity" />
+        <activity android:name=".activities.preferences.targetAudience.TargetAudiencesActivity" />
+        <activity android:name=".activities.preferences.targetAudience.GeographiesActivity" />
+        <activity android:name=".activities.preferences.customizedPreferences.CustomersDevicesActivity" />
+        <activity android:name=".activities.ResultsActivity" />
+        <activity android:name=".activities.PreferencesActivity" />
+        <activity android:name=".activities.preferences.BaseFilterActivity"></activity>
     </application>
 
 </manifest>

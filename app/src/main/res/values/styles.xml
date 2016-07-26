@@ -8,4 +8,39 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Icons">
+        <item name="android:textColor">@color/icon_text_color</item>
+        <item name="android:background">@drawable/filter_btn_bg</item>
+        <item name="android:width">@dimen/os_size</item>
+        <item name="android:height">@dimen/os_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">@dimen/os_icon_padding_top</item>
+    </style>
+
+    <style name="os_icons">
+        <item name="android:textSize">@dimen/os_icon_text_size</item>
+        <item name="android:textColor">@color/icon_text_color</item>
+        <item name="android:background">@drawable/filter_btn_bg</item>
+        <item name="android:width">@dimen/os_size</item>
+        <item name="android:height">@dimen/os_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">@dimen/os_icon_padding_top</item>
+    </style>
+
+    <style name="device_types_icon">
+        <item name="android:textSize">@dimen/device_types_icon_text_size</item>
+        <item name="android:textColor">@color/icon_text_color</item>
+        <item name="android:background">@drawable/filter_btn_bg</item>
+        <item name="android:width">@dimen/os_size</item>
+        <item name="android:height">@dimen/os_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">@dimen/devices_type_icon_padding_top</item>
+    </style>
+
+    <style name="question">
+        <item name="android:textColor">@color/question_text_color</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
 </resources>

@@ -1,12 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_types_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".preferences.DeviceTypesActivity">
+    tools:context=".activities.preferences.DeviceTypesActivity">
+
+    <ImageView
+        android:id="@+id/devicesImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/device_textView"
+        android:layout_alignEnd="@+id/device_textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:contextClickable="false"
+        android:cropToPadding="false"
+        android:src="@drawable/devices_150x150" />
+
+    <TextView
+        android:id="@+id/device_textView"
+        style="@style/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="@string/device_types_question" />
+
+    <TextView
+        android:id="@+id/tablet_textView"
+        style="@style/device_types_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="29dp"
+        android:onClick="toggleDeviceType"
+        android:text="@string/fa_icon_tablet"
+        android:layout_below="@+id/device_textView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/smartphone_textView"
+        style="@style/device_types_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tablet_textView"
+        android:layout_marginStart="53dp"
+        android:layout_toEndOf="@+id/tablet_textView"
+        android:onClick="toggleDeviceType"
+        android:text="@string/fa_icon_phone" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/action_button_background"
+        android:text="@string/done"
+        android:textColor="@color/action_button_text_color"
+        android:onClick="backToPreferences"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

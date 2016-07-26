@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.perfecto.optimizer.preferences.customizedPreferences.ChangeCustomizedPreferencesFragment">
+    tools:context=".activities.preferences.customizedPreferences.ChangeCustomizedPreferencesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment unselected_filter_btn_bg -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

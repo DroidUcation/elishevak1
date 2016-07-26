@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_icon_tablet">&#xf10a;</string>
+    <string name="fa_icon_phone">&#xf10b;</string>
+    <string name="fa_icon_android">&#xf17b;</string>
+    <string name="fa_icon_iOS">&#xf179;</string>
+    <string name="fa_icon_windows">&#xf17a;</string>
+</resources>
