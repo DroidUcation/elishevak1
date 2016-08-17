@@ -18,7 +18,7 @@ import java.util.Set;
 public class OperatingSystemsActivity extends BaseFilterActivity {
 
     private static final String OS_KEY = Consts.OS_KEY;
-    private Set<String> os = new HashSet<>();
+        private Set<String> os = new HashSet<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +63,7 @@ public class OperatingSystemsActivity extends BaseFilterActivity {
 
         SharedPreferences.Editor editor = preferences.edit();
         editor.putStringSet(OS_KEY, os);
+        editor.putLong(Consts.LAST_CHANGE_KEY, System.currentTimeMillis());
         editor.apply();
     }
 }

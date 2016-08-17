@@ -60,6 +60,7 @@ public class GeographiesActivity extends BaseFilterActivity {
 
         SharedPreferences.Editor editor = preferences.edit();
         editor.putStringSet(COUNTRIES_KEY, countries);
+        editor.putLong(Consts.LAST_CHANGE_KEY, System.currentTimeMillis());
         editor.apply();
     }
 

@@ -65,6 +65,7 @@ public class DeviceTypesActivity extends BaseFilterActivity {
 
         SharedPreferences.Editor editor = preferences.edit();
         editor.putStringSet(DEVICE_KEY, deviceType);
+        editor.putLong(Consts.LAST_CHANGE_KEY, System.currentTimeMillis());
         editor.apply();
     }
 

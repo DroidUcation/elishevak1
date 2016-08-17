@@ -10,6 +10,8 @@ public class Consts {
     public static final String DEVICE_KEY = "type";
     public static final String OS_KEY = "os";
     public static final String COUNTRIES_KEY = "Countries";
+    public static final String LAST_CHANGE_KEY = "LastChange";
+
 
     public static final String SHARE_KEY = "shareKey";
     public static final String REPORT_KEY = "report";
@@ -39,5 +41,4 @@ public class Consts {
         public static final String COLUMN_NAME = "name";
 
     }
-
 }

@@ -19,6 +19,7 @@ import com.perfecto.optimizer.utils.Consts;
 import com.perfecto.optimizer.utils.SQLHelper;
 
 import java.io.IOException;
+import java.util.HashSet;
 
 /**
  * Created by elishevak on 6/27/2016.
@@ -85,7 +86,11 @@ public class PreferencesActivity extends AppCompatActivity {
         tempQuestion = (TextView) findViewById(R.id.temp_question);
         seeFullPicture = (Button) findViewById(R.id.see_full_picture);
 
-        if (preferences.getAll().isEmpty()) {
+        boolean noFilters = checkNoValues(Consts.DEVICE_KEY, preferences) &&
+                checkNoValues(Consts.OS_KEY, preferences) &&
+                checkNoValues(Consts.COUNTRIES_KEY, preferences);
+
+        if (noFilters) {
             tempQuestion.setVisibility(View.VISIBLE);
             results.setVisibility(View.INVISIBLE);
             seeFullPicture.setVisibility(View.INVISIBLE);
@@ -112,5 +117,11 @@ public class PreferencesActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    private boolean checkNoValues(String key, SharedPreferences preferences) {
+
+        return !preferences.contains(key) ||
+                preferences.getStringSet(key, new HashSet<String>()).size() == 0;
     }
 }
